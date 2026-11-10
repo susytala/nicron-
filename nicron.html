@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0e1623">
+<meta name="description" content="Catálogo Nicron: porcelana fría, siliconas, pigmentos y accesorios. Pedidos por WhatsApp.">
+<title>Catálogo Nicron · Porcelana fría</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#f6f1ec;--surface:#fff;--surface2:#faf6f1;--line:#e8dfd5;
+  --ink:#1d1a2b;--ink2:#524c63;--ink3:#6d677d;
+  --brand:#c2306b;--navy:#1d1a2b;--accent:#ffc21a;--accent-ink:#2b2000;
+  --sum:#fbeef4;--sum-b:#f1c9da;--ok:#14864a;--bad:#d93025;
+  --shadow:0 1px 2px rgba(29,26,43,.06),0 8px 24px -12px rgba(29,26,43,.22);
+  --r:18px;--wrap:1160px;
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#110f1b;--surface:#1a1727;--surface2:#151222;--line:#2b2740;--ink:#f1eef8;--ink2:#b5aecb;--ink3:#9a93b3;--brand:#ff7eb0;--navy:#2a2540;--sum:#2a1a27;--sum-b:#5a2f46;--ok:#4ade80;--bad:#ff8a80;--shadow:0 10px 30px -12px rgba(0,0,0,.6)}}
+[data-theme="dark"]{--bg:#110f1b;--surface:#1a1727;--surface2:#151222;--line:#2b2740;--ink:#f1eef8;--ink2:#b5aecb;--ink3:#9a93b3;--brand:#ff7eb0;--navy:#2a2540;--sum:#2a1a27;--sum-b:#5a2f46;--ok:#4ade80;--bad:#ff8a80;--shadow:0 10px 30px -12px rgba(0,0,0,.6)}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{font-family:"Avenir Next","Segoe UI",system-ui,-apple-system,Roboto,sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.45;-webkit-font-smoothing:antialiased;overflow-x:clip}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.page{max-width:var(--wrap);margin:0 auto;padding:0 16px 110px}
+@media(min-width:720px){.page{padding-left:28px;padding-right:28px}}
+#det-page{display:none}
+/* Header */
+.hdr{position:sticky;top:0;z-index:200;margin:0 -16px;padding:0 16px;height:60px;display:flex;align-items:center;gap:10px;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
+@media(min-width:720px){.hdr{margin:0 -28px;padding:0 28px}}
+.brand{display:flex;align-items:center;gap:10px;margin-right:auto;font-weight:800;font-size:18px;letter-spacing:-.02em;cursor:pointer}
+.brand-mark{width:34px;height:34px;border-radius:10px;background:var(--navy);display:grid;place-items:center;font-size:18px}
+.brand small{display:block;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin-top:-2px}
+.icon-btn{position:relative;width:40px;height:40px;border-radius:12px;border:1px solid var(--line);background:var(--surface);display:grid;place-items:center;font-size:17px}
+.icon-btn:hover{border-color:var(--brand)}
+.icon-btn svg{width:20px;height:20px;stroke:var(--ink);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.cart-badge{position:absolute;top:-6px;right:-6px;min-width:20px;height:20px;padding:0 5px;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-size:10.5px;font-weight:800;display:none;align-items:center;justify-content:center;border:2px solid var(--bg)}
+/* Hero */
+.hero{margin-top:16px;border-radius:22px;padding:26px 22px;color:#fff;position:relative;overflow:hidden;background:linear-gradient(120deg,#2a1b4d 0%,#c2306b 70%,#ff8a5c 100%);box-shadow:var(--shadow)}
+.hero h1{font-size:clamp(26px,5vw,44px);font-weight:800;letter-spacing:-.03em;line-height:1.05;max-width:620px}
+.hero p{margin-top:10px;font-size:14.5px;opacity:.9;max-width:520px}
+.hero .pill{display:inline-block;margin-top:16px;background:var(--accent);color:var(--accent-ink);font-weight:800;font-size:12.5px;padding:7px 14px;border-radius:20px}
+.hero::after{content:"🏺";position:absolute;right:18px;bottom:-14px;font-size:clamp(80px,16vw,150px);opacity:.22}
+.ship{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:11px 14px;font-size:13px;color:var(--ink2);display:flex;gap:8px;flex-wrap:wrap;justify-content:space-between}
+.ship b{color:var(--ink)}
+.toolbar{padding:22px 2px 12px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.toolbar h2{font-size:clamp(24px,4.4vw,36px);font-weight:800;letter-spacing:-.03em;line-height:1.05}
+.toolbar small{font-size:13px;font-weight:600;color:var(--ink3)}
+/* Filters */
+.filters{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;margin:0 0 18px;box-shadow:var(--shadow)}
+.search{position:relative;display:flex}
+.search svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:19px;height:19px;stroke:var(--ink3);fill:none;stroke-width:2;stroke-linecap:round;pointer-events:none}
+.search input{width:100%;height:50px;padding:0 48px 0 44px;border:1px solid var(--line);background:var(--surface2);border-radius:14px;font-size:16px;font-weight:600;outline:none}
+.search input::placeholder{color:var(--ink3);font-weight:500}
+.search input:focus{border-color:var(--brand);background:var(--surface)}
+.search input::-webkit-search-cancel-button{display:none}
+.search-clear{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border:none;background:var(--line);border-radius:10px;font-size:18px;line-height:1;display:none;color:var(--ink2)}
+.search.has .search-clear{display:block}
+.frow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:12px}
+.chip{border:1px solid var(--line);background:var(--surface);padding:8px 14px;font-size:13px;font-weight:700;border-radius:20px}
+.chip:hover{border-color:var(--brand)}
+.chip[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.fsel{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+select{appearance:none;-webkit-appearance:none;border:1px solid var(--line);background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%237b8598' stroke-width='2'%3E%3Cpath d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E") no-repeat right 12px center;padding:9px 34px 9px 14px;font-size:13px;font-weight:600;border-radius:12px;max-width:100%}
+.fmeta{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:12px;padding-top:11px;border-top:1px solid var(--line);font-size:12px;color:var(--ink3)}
+.fmeta button{background:none;border:none;font-size:12px;font-weight:700;color:var(--brand);text-decoration:underline}
+.fmeta button[hidden]{display:none}
+@media(max-width:719px){.fsel{margin-left:0;width:100%;flex-direction:column}.fsel select{width:100%}}
+/* Grid */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(min-width:720px){.grid{grid-template-columns:repeat(3,1fr);gap:16px}}
+@media(min-width:1080px){.grid{grid-template-columns:repeat(4,1fr);gap:18px}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;cursor:pointer;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s,border-color .25s}
+@media(hover:hover){.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:color-mix(in srgb,var(--brand) 40%,var(--line))}}
+.card:active{transform:scale(.98)}
+.art{aspect-ratio:1;display:grid;place-items:center;position:relative;font-size:clamp(44px,9vw,64px)}
+.art span.ico{filter:drop-shadow(0 6px 10px rgba(0,0,0,.25))}
+.art .name-in{position:absolute;left:10px;right:10px;bottom:10px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.92);text-align:center}
+.off{position:absolute;top:10px;left:10px;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:800;padding:4px 9px;border-radius:9px;box-shadow:0 4px 10px -4px rgba(0,0,0,.35);z-index:2}
+.card-body{padding:13px 13px 15px;display:flex;flex-direction:column;flex:1}
+.card-cat{font-size:10px;color:var(--brand);text-transform:uppercase;letter-spacing:.12em;font-weight:800;margin-bottom:6px}
+.card-title{font-size:14px;font-weight:700;line-height:1.25;margin-bottom:10px;flex:1}
+.prices{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.price{font-size:20px;font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.old{font-size:12px;color:var(--ink3);text-decoration:line-through}
+.from{font-size:11px;color:var(--ink3)}
+.card-btn{width:100%;background:var(--navy);color:#fff;border:none;border-radius:12px;padding:11px;font-size:13px;font-weight:700}
+@media(hover:hover){.card:hover .card-btn{background:var(--accent);color:var(--accent-ink)}}
+.empty-res{grid-column:1/-1;border:1.5px dashed var(--line);background:var(--surface);padding:44px 20px;text-align:center;border-radius:var(--r)}
+.empty-res b{display:block;font-size:20px;margin-bottom:6px}
+.empty-res p{color:var(--ink2);margin-bottom:16px}
+.empty-res button{background:var(--accent);color:var(--accent-ink);border:none;padding:11px 18px;font-weight:800;border-radius:12px}
+/* Features */
+.sec-label{font-size:11px;font-weight:800;color:var(--ink3);text-transform:uppercase;letter-spacing:.16em;padding:44px 2px 14px;display:flex;align-items:center;gap:12px}
+.sec-label::after{content:"";flex:1;height:1px;background:var(--line)}
+.feats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(min-width:720px){.feats{grid-template-columns:repeat(4,1fr);gap:18px}}
+.feat{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px 16px}
+.feat-icon{width:44px;height:44px;border-radius:13px;background:var(--surface2);border:1px solid var(--line);display:grid;place-items:center;font-size:21px;margin-bottom:14px}
+.feat-title{font-size:13.5px;font-weight:800}
+.feat-sub{font-size:12px;color:var(--ink3);margin-top:3px}
+.foot{margin-top:34px;font-size:12px;color:var(--ink3);text-align:center}
+/* Detail */
+.back-btn{display:inline-flex;align-items:center;gap:6px;margin:14px 0 6px;padding:9px 14px;font-size:13px;cursor:pointer;background:var(--surface);border:1px solid var(--line);border-radius:12px;font-weight:700}
+.back-btn:hover{border-color:var(--brand)}
+.det-wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;margin-top:10px}
+@media(min-width:900px){.det-wrap{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;align-items:start}.det-art{position:sticky;top:80px}}
+.det-art .art{aspect-ratio:1;border-radius:24px;overflow:hidden;font-size:clamp(90px,20vw,150px);box-shadow:var(--shadow)}
+@media(max-width:899px){.det-art .art{aspect-ratio:16/10}}
+.det-cat{font-size:11px;color:var(--brand);text-transform:uppercase;letter-spacing:.14em;margin-bottom:8px;font-weight:800}
+.det-title{font-size:clamp(26px,4vw,38px);font-weight:800;line-height:1.05;letter-spacing:-.03em;margin-bottom:16px}
+.price-hero{background:var(--navy);border-radius:var(--r);padding:18px 20px;margin-bottom:16px;color:#fff;position:relative;overflow:hidden}
+.price-hero::after{content:"";position:absolute;right:-30px;top:-30px;width:120px;height:120px;border-radius:50%;background:var(--accent)}
+.price-hero>*{position:relative;z-index:1}
+.ph-label{font-size:11px;opacity:.7;margin-bottom:4px;text-transform:uppercase;letter-spacing:.14em;font-weight:700}
+.ph-val{font-size:38px;font-weight:800;line-height:1;letter-spacing:-.04em;color:var(--accent);font-variant-numeric:tabular-nums}
+.ph-old{font-size:13px;opacity:.7;margin-top:6px}
+.ph-old s{margin-right:6px}
+.det-desc{font-size:14.5px;color:var(--ink2);line-height:1.7;margin-bottom:18px}
+.calc-box{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;margin-bottom:16px}
+.calc-title{font-size:14px;font-weight:800;margin-bottom:14px}
+.field-label{font-size:11px;color:var(--ink3);margin-bottom:6px;display:block;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+.field{width:100%;border:1px solid var(--line);border-radius:12px;padding:13px 14px;font-size:15px;font-weight:600;background:var(--surface2);margin-bottom:16px;outline:none}
+.field:focus{border-color:var(--brand)}
+select.field{padding-right:34px;background:var(--surface2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%237b8598' stroke-width='2'%3E%3Cpath d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E") no-repeat right 14px center}
+.qty-row{display:flex;align-items:center;gap:8px}
+.qty-btn{width:48px;height:48px;border:1px solid var(--line);border-radius:12px;background:var(--surface2);font-size:22px;font-weight:600;flex-shrink:0}
+.qty-btn:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.qty-inp{flex:1;min-width:0;text-align:center;border:1px solid var(--line);border-radius:12px;padding:12px;font-size:19px;font-weight:800;background:var(--surface2);outline:none}
+.qty-inp:focus{border-color:var(--brand)}
+.summary{background:var(--sum);border:1px solid var(--sum-b);border-radius:var(--r);padding:16px 18px;margin-bottom:16px}
+.sum-ttl{font-size:11px;font-weight:800;color:var(--brand);margin-bottom:10px;text-transform:uppercase;letter-spacing:.14em}
+.sum-row{display:flex;justify-content:space-between;gap:12px;font-size:13.5px;padding:4px 0}
+.sum-row.tot{font-size:22px;font-weight:800;border-top:1px solid var(--sum-b);margin-top:10px;padding-top:12px}
+.sum-label{color:var(--ink2)}.sum-row.tot .sum-label{color:var(--ink)}
+.sum-val{font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.btn-cart{width:100%;background:var(--accent);color:var(--accent-ink);border:none;border-radius:14px;padding:16px;font-size:15.5px;font-weight:800;margin-bottom:10px}
+.btn-cart:hover{filter:brightness(1.05)}
+.btn-wa{width:100%;background:transparent;border:1.5px solid var(--line);border-radius:14px;padding:13px;font-size:14px;font-weight:700}
+.btn-wa:hover{border-color:#25d366;color:#128c4a}
+/* Cart */
+.overlay{position:fixed;inset:0;background:rgba(6,12,24,.55);backdrop-filter:blur(3px);z-index:300;display:none}
+.overlay.on{display:block}
+.panel{position:fixed;top:0;right:0;width:min(400px,100vw);height:100%;background:var(--surface);z-index:400;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.panel.on{transform:none;box-shadow:-20px 0 50px -20px rgba(0,0,0,.4)}
+.panel-hdr{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid var(--line)}
+.panel-hdr b{font-size:17px}
+.x-btn{width:36px;height:36px;border-radius:10px;border:1px solid var(--line);background:var(--surface2);font-size:20px;line-height:1;color:var(--ink2)}
+.panel-items{flex:1;overflow-y:auto;padding:6px 20px}
+.empty{text-align:center;color:var(--ink3);padding:80px 0}
+.empty span{font-size:44px;display:block;margin-bottom:12px;opacity:.6}
+.c-item{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);align-items:flex-start}
+.c-art{width:56px;height:56px;border-radius:12px;display:grid;place-items:center;font-size:26px;flex-shrink:0}
+.c-info{flex:1;min-width:0}
+.c-title{font-size:13.5px;font-weight:700;line-height:1.25}
+.c-var{font-size:12px;color:var(--ink3);margin:2px 0}
+.c-ctl{display:flex;align-items:center;gap:8px;margin-top:6px}
+.c-ctl button{width:28px;height:28px;border-radius:8px;border:1px solid var(--line);background:var(--surface2);font-weight:700}
+.c-ctl span{min-width:22px;text-align:center;font-weight:800;font-size:14px}
+.c-sub{margin-left:auto;font-weight:800;font-size:13.5px;font-variant-numeric:tabular-nums}
+.c-del{background:none;border:none;color:var(--ink3);font-size:18px;padding:2px 6px}
+.c-del:hover{color:var(--bad)}
+.panel-footer{padding:16px 20px 20px;border-top:1px solid var(--line);background:var(--surface2);display:none}
+.bar{height:8px;border-radius:6px;background:var(--line);overflow:hidden;margin:6px 0 4px}
+.bar i{display:block;height:100%;background:var(--ok);width:0;transition:width .3s}
+.free-msg{font-size:12.5px;color:var(--ink2);margin-bottom:10px}
+.cf-row{display:flex;justify-content:space-between;font-size:13.5px;padding:3px 0;color:var(--ink2)}
+.cf-row.grand{font-size:22px;font-weight:800;color:var(--ink);border-top:1px solid var(--line);margin-top:8px;padding-top:12px}
+.btn-checkout{width:100%;background:var(--accent);color:var(--accent-ink);border:none;border-radius:14px;padding:15px;font-size:15px;font-weight:800;margin-top:14px}
+.btn-clear{width:100%;background:none;border:none;padding:10px;font-size:12.5px;font-weight:600;color:var(--ink3);margin-top:4px}
+.btn-clear:hover{color:var(--bad)}
+.toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#fff;padding:12px 22px;border-radius:14px;font-size:13.5px;font-weight:700;z-index:999;opacity:0;transition:opacity .25s,transform .25s;pointer-events:none;white-space:nowrap;box-shadow:0 12px 30px -8px rgba(0,0,0,.45);border-left:4px solid var(--accent)}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+.wa-float{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom));right:16px;z-index:250;width:58px;height:58px;background:#25d366;border-radius:20px;display:grid;place-items:center;border:none;box-shadow:0 10px 24px -6px rgba(37,211,102,.55)}
+.wa-float svg{width:29px;height:29px;fill:#fff}
+/* Modal */
+.modal-overlay{position:fixed;inset:0;background:rgba(6,12,24,.6);backdrop-filter:blur(3px);z-index:600;display:none;align-items:flex-end;justify-content:center;overflow-y:auto}
+.modal-overlay.on{display:flex}
+@media(min-width:600px){.modal-overlay{align-items:center;padding:24px}}
+.modal-box{background:var(--surface);border-radius:26px 26px 0 0;width:100%;max-width:500px;padding:28px 22px 30px;max-height:100%;overflow-y:auto;position:relative}
+@media(min-width:600px){.modal-box{border-radius:26px}}
+.modal-box .x-btn{position:absolute;top:16px;right:16px}
+.modal-title{font-size:24px;font-weight:800;letter-spacing:-.03em;margin-bottom:4px}
+.modal-sub{font-size:13.5px;color:var(--ink3);margin-bottom:20px}
+.msum{background:var(--sum);border:1px solid var(--sum-b);border-radius:14px;padding:14px 16px;margin-bottom:16px;font-size:12.5px}
+.mrow{display:flex;justify-content:space-between;gap:12px;padding:2px 0;color:var(--ink2)}
+.mrow.tot{font-size:17px;font-weight:800;color:var(--ink);border-top:1px solid var(--sum-b);margin-top:8px;padding-top:10px}
+.form-field{margin-bottom:14px}
+.form-field label{font-size:11px;font-weight:800;color:var(--ink3);display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:.1em}
+.form-field input,.form-field select{width:100%;border:1px solid var(--line);border-radius:12px;padding:13px 14px;font-size:16px;outline:none;background:var(--surface2)}
+.form-field input:focus,.form-field select:focus{border-color:var(--brand)}
+.f-err{font-size:12px;color:var(--bad);margin-top:5px;display:none;font-weight:600}
+.btn-send{width:100%;background:#25d366;color:#fff;border:none;border-radius:14px;padding:15px;font-size:15px;font-weight:800;margin-top:6px}
+.btn-cancel{width:100%;background:none;border:none;padding:11px;font-size:13.5px;font-weight:600;color:var(--ink3)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="overlay" id="overlay" onclick="closeCart()"></div>
+<aside class="panel" id="panel" aria-label="Carrito">
+  <div class="panel-hdr"><b>Carrito de compras</b><button class="x-btn" onclick="closeCart()" aria-label="Cerrar carrito">×</button></div>
+  <div class="panel-items" id="panel-items"></div>
+  <div class="panel-footer" id="panel-footer">
+    <div class="free-msg" id="free-msg"></div>
+    <div class="bar"><i id="free-bar"></i></div>
+    <div class="cf-row" style="margin-top:8px"><span>Subtotal</span><span id="cf-sub"></span></div>
+    <div class="cf-row grand"><span>Total</span><span id="cf-total"></span></div>
+    <button class="btn-checkout" onclick="openModal()">Finalizar pedido</button>
+    <button class="btn-clear" onclick="clearCart()">🗑️ Vaciar carrito</button>
+  </div>
+</aside>
+
+<!-- CATALOGO -->
+<div class="page" id="cat-page">
+  <header class="hdr">
+    <div class="brand" onclick="goBack()"><span class="brand-mark">🏺</span><span>Manojito MAX<small>porcelana fría</small></span></div>
+    <button class="icon-btn" id="theme-btn" onclick="toggleTheme()" title="Cambiar tema">🌙</button>
+    <button class="icon-btn" onclick="openCart()" aria-label="Abrir carrito"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg><span class="cart-badge" id="badge-cat">0</span></button>
+  </header>
+
+  <section class="hero">
+    <h1>Todo para tus trabajos en porcelana fría</h1>
+    <p>Masas, siliconas, pigmentos y accesorios en un solo lugar. Armá tu pedido y envialo directo por WhatsApp.</p>
+    <span class="pill">10% OFF en todo el catálogo</span>
+  </section>
+  <div class="ship"><span>🚚 <b>Envío gratis</b> en compras superiores a $ 300.000</span><span>💳 Transferencia <b>5% off</b></span></div>
+
+  <div class="toolbar"><h2>Catálogo Nicron</h2><small id="prod-count"></small></div>
+  <section class="filters" aria-label="Buscar y filtrar">
+    <div class="search" id="search-box">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input type="search" id="q" placeholder="Buscar: minibox, pigmento, rodillo…" autocomplete="off" oninput="setQ(this.value)" aria-label="Buscar productos">
+      <button class="search-clear" type="button" onclick="clearQ()" aria-label="Borrar búsqueda">×</button>
+    </div>
+    <div class="frow" id="chips"></div>
+    <div class="frow">
+      <div class="fsel" style="margin-left:0">
+        <select id="f-price" onchange="setPrice(this.value)" aria-label="Filtrar por precio">
+          <option value="">Cualquier precio</option>
+          <option value="1">Hasta $ 5.000</option>
+          <option value="2">$ 5.000 a $ 50.000</option>
+          <option value="3">Más de $ 50.000</option>
+        </select>
+        <select id="f-sort" onchange="setSort(this.value)" aria-label="Ordenar">
+          <option value="">Orden predeterminado</option>
+          <option value="asc">Precio: menor a mayor</option>
+          <option value="desc">Precio: mayor a menor</option>
+          <option value="az">Nombre: A a Z</option>
+        </select>
+      </div>
+    </div>
+    <div class="fmeta"><span id="res-meta"></span><button type="button" id="reset-f" onclick="resetFilters()" hidden>Limpiar filtros</button></div>
+  </section>
+  <div class="grid" id="grid"></div>
+
+  <div class="sec-label">Por qué elegirnos</div>
+  <div class="feats">
+    <div class="feat"><div class="feat-icon">🚚</div><div class="feat-title">Envío gratis</div><div class="feat-sub">A todo el país desde $ 300.000</div></div>
+    <div class="feat"><div class="feat-icon">💳</div><div class="feat-title">Formas de pago</div><div class="feat-sub">Cuotas, débito, efectivo y transferencia</div></div>
+    <div class="feat"><div class="feat-icon">🔒</div><div class="feat-title">Compra segura</div><div class="feat-sub">Tus datos siempre protegidos</div></div>
+    <div class="feat"><div class="feat-icon">💬</div><div class="feat-title">Atención por WhatsApp</div><div class="feat-sub">Consultas y pedidos</div></div>
+  </div>
+  <p class="foot">Precios de referencia tomados de nicron.com.ar. Confirmá disponibilidad y precio final al enviar tu pedido.</p>
+</div>
+
+<!-- DETALLE -->
+<div class="page" id="det-page">
+  <header class="hdr">
+    <div class="brand" onclick="goBack()"><span class="brand-mark">🏺</span><span>Manojito MAX<small>porcelana fría</small></span></div>
+    <button class="icon-btn" id="theme-btn2" onclick="toggleTheme()" title="Cambiar tema">🌙</button>
+    <button class="icon-btn" onclick="openCart()" aria-label="Abrir carrito"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg><span class="cart-badge" id="badge-det">0</span></button>
+  </header>
+  <div class="back-btn" onclick="goBack()" role="button" tabindex="0">← Volver al catálogo</div>
+  <div class="det-wrap">
+    <div class="det-art" id="det-art"></div>
+    <div>
+      <div class="det-cat" id="det-cat"></div>
+      <div class="det-title" id="det-title"></div>
+      <div class="price-hero"><div class="ph-label">Precio por unidad</div><div class="ph-val" id="det-price"></div><div class="ph-old" id="det-old"></div></div>
+      <div class="det-desc" id="det-desc"></div>
+      <div class="calc-box">
+        <div class="calc-title">🧮 Armar pedido</div>
+        <div id="var-wrap"><label class="field-label" for="v-sel">Presentación</label><select class="field" id="v-sel" onchange="onVariant()"></select></div>
+        <label class="field-label" for="note">Color / detalle (opcional)</label>
+        <input class="field" id="note" type="text" placeholder="Ej: color rosa, número 5…" maxlength="80">
+        <label class="field-label" for="qty">Cantidad</label>
+        <div class="qty-row">
+          <button class="qty-btn" onclick="chQty(-1)" aria-label="Menos">−</button>
+          <input type="number" class="qty-inp" id="qty" value="1" min="1" oninput="calcTotal()">
+          <button class="qty-btn" onclick="chQty(1)" aria-label="Más">+</button>
+        </div>
+      </div>
+      <div class="summary">
+        <div class="sum-ttl">Resumen</div>
+        <div class="sum-row"><span class="sum-label">Presentación</span><span class="sum-val" id="s-var"></span></div>
+        <div class="sum-row"><span class="sum-label">Cantidad</span><span class="sum-val" id="s-qty"></span></div>
+        <div class="sum-row"><span class="sum-label">Precio unitario</span><span class="sum-val" id="s-unit"></span></div>
+        <div class="sum-row tot"><span class="sum-label">Total</span><span class="sum-val" id="s-total"></span></div>
+      </div>
+      <button class="btn-cart" onclick="addCart()">Agregar al carrito</button>
+      <button class="btn-wa" onclick="contactWA()">Consultar por WhatsApp</button>
+    </div>
+  </div>
+</div>
+
+<button class="wa-float" onclick="floatWA()" aria-label="Contactar por WhatsApp" title="Consultar por WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 2C6.477 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5.004L2.01 22l5.13-1.342A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 11.999 2zm.001 18a7.946 7.946 0 01-4.341-1.284l-.31-.185-3.043.797.814-2.981-.203-.323A7.95 7.95 0 014 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8z"/></svg>
+</button>
+
+<div class="modal-overlay" id="order-modal">
+  <div class="modal-box">
+    <button class="x-btn" onclick="closeModal()" aria-label="Cerrar">×</button>
+    <div class="modal-title">Confirmar pedido</div>
+    <div class="modal-sub">Completá tus datos y te contactamos a la brevedad</div>
+    <div class="msum" id="msum"></div>
+    <div class="form-field"><label for="f-nombre">Nombre y apellido *</label><input id="f-nombre" type="text" placeholder="Juan Pérez" oninput="clearErr('nombre')"><div class="f-err" id="err-nombre">Ingresá tu nombre</div></div>
+    <div class="form-field"><label for="f-telefono">Teléfono / WhatsApp *</label><input id="f-telefono" type="tel" placeholder="2614123456" oninput="clearErr('telefono')"><div class="f-err" id="err-telefono">Ingresá tu teléfono</div></div>
+    <div class="form-field"><label for="f-localidad">Localidad / Provincia *</label><input id="f-localidad" type="text" placeholder="Mendoza, Mendoza" oninput="clearErr('localidad')"><div class="f-err" id="err-localidad">Ingresá tu localidad</div></div>
+    <div class="form-field"><label for="f-pago">Forma de pago</label>
+      <select id="f-pago" onchange="renderModalSum()">
+        <option value="transfer">Transferencia (5% off)</option>
+        <option value="tarjeta">Tarjeta de crédito en cuotas</option>
+        <option value="debito">Tarjeta de débito</option>
+        <option value="efectivo">Efectivo (Pago Fácil / Rapipago)</option>
+      </select></div>
+    <div class="form-field"><label for="f-nota">Nota (opcional)</label><input id="f-nota" type="text" placeholder="Ej: entrega urgente…"></div>
+    <button class="btn-send" onclick="sendOrder()">Enviar pedido por WhatsApp</button>
+    <button class="btn-cancel" onclick="closeModal()">Cancelar</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const WA = "5492615692297";
+const FREE_SHIP = 300000;
+const TRANSFER_DISC = 5;
+
+// ── Productos: [categoría, nombre, precio lista, precio actual, precio máx (si hay rango)] ──
+// Precios tomados de nicron.com.ar. Para cambiar un precio, editá los números.
+const RAW = [
+  ["Porcelana fría","Leticia Suarez del Cerro MINIBOX",63100,56790],
+  ["Porcelana fría","Leticia Suarez del Cerro",95300,85770],
+  ["Porcelana fría","Nicron Eva MINIBOX",63100,56790],
+  ["Porcelana fría","Nicron Eva",95300,85770],
+  ["Porcelana fría","Nicron Flex",95300,85770],
+  ["Porcelana fría","Nicron Flex MINIBOX",63100,56790],
+  ["Porcelana fría","Nicron Soft",91000,81900],
+  ["Porcelana fría","Nicron Soft MINIBOX",57300,51570],
+  ["Porcelana fría","Nicron Tradicional",0,77400,79920],
+  ["Porcelana fría","Nicron Tradicional Color",91000,81900],
+  ["Porcelana fría","Nicron Tradicional MINIBOX",59000,53100],
+  ["Porcelana fría","Nicron Color MiniBox (todos los colores)",46000,41400],
+  ["Siliconas","Barras de silicona x packs de unidades",4500,4050],
+  ["Siliconas","Barras de silicona x 1kg",11000,9900],
+  ["Siliconas","Barras de silicona blanca",0,5400,16200],
+  ["Pigmentos","Pigmento Nicron (unidad)",2500,2250],
+  ["Pigmentos","Pigmento Nicron (caja x 6 unidades)",15000,13500],
+  ["Pigmentos","Pigmento Nicron línea completa (1 de cada color)",102000,91800],
+  ["Pigmentos","Pigmento Nicron Kit Fluo",15000,13500],
+  ["Pigmentos","Pigmento Nicron Kit Básicos",15000,13500],
+  ["Pigmentos","Pigmento Nicron Kit Navidad",15000,13500],
+  ["Pigmentos","Pigmento Nicron Kit Mickey-Minnie",15000,13500],
+  ["Pigmentos","Pigmento Nicron Kit Mario Bros",15000,13500],
+  ["Pigmentos","Pigmento Nicron Kit Otoño",15000,13500],
+  ["Accesorios","Varillas niveladoras encastrables",0,1620,3240],
+  ["Accesorios","Varillas niveladoras 4 medidas",6700,6030],
+  ["Accesorios","Valija puntas redondas x 13",11000,9900],
+  ["Accesorios","Valija puntas ovaladas x 13",11000,9900],
+  ["Accesorios","Valija puntas luna x 13",11000,9900],
+  ["Accesorios","Valija puntas gota x 13",11000,9900],
+  ["Accesorios","Tag redondo",2300,2070],
+  ["Accesorios","Tag nube",1500,1350],
+  ["Accesorios","Rodillo mimbre",3000,2700],
+  ["Accesorios","Rodillo lana",3000,2700],
+  ["Accesorios","Rodillo flores y hojas",3000,2700],
+  ["Accesorios","Rodillo estrellas",3000,2700],
+  ["Accesorios","Rodillo corazones",3000,2700],
+  ["Accesorios","Números vela",14600,13140],
+  ["Accesorios","Medidor de esferas",5200,4680],
+  ["Accesorios","Lápiz peluchón",2600,2340],
+  ["Accesorios","Lápiz liso",2600,2340],
+  ["Accesorios","Kit puntas redondas x 5",5000,4500],
+  ["Accesorios","Kit puntas ovaladas x 5",5000,4500],
+  ["Accesorios","Kit puntas luna x 5",5000,4500],
+  ["Accesorios","Kit puntas gota x 5",5000,4500],
+  ["Accesorios","Ginger redondo",2500,2250],
+  ["Accesorios","Ginger estrella",2500,2250],
+  ["Accesorios","Ginger corazón",2500,2250],
+  ["Accesorios","Bases redondas",3300,2970],
+  ["Accesorios","Bases cuadradas",4200,3780],
+  ["Accesorios","ABC + números",8400,7560]
+];
+
+const CAT_STYLE = {
+  "Porcelana fría":{g:"linear-gradient(135deg,#ff9ac1,#c2306b)",d:"Masa de porcelana fría Nicron para modelar y crear tus piezas."},
+  "Siliconas":{g:"linear-gradient(135deg,#7dd3fc,#2563eb)",d:"Barras de silicona para pistola, ideales para pegar y terminar tus trabajos."},
+  "Pigmentos":{g:"linear-gradient(135deg,#fde047,#f97316)",d:"Pigmentos Nicron para dar color a tu masa."},
+  "Accesorios":{g:"linear-gradient(135deg,#86efac,#0d9488)",d:"Accesorios y herramientas para modelar y decorar."}
+};
+function emojiFor(p){
+  const n = p.title.toLowerCase();
+  if(/navidad/.test(n)) return "🎄"; if(/otoño/.test(n)) return "🍂"; if(/fluo/.test(n)) return "✨";
+  if(/pigmento/.test(n)) return "🎨"; if(/silicona/.test(n)) return "🔥";
+  if(/varilla/.test(n)) return "📏"; if(/puntas/.test(n)) return "🖌️"; if(/tag/.test(n)) return "🏷️";
+  if(/rodillo/.test(n)) return "🌀"; if(/número|abc/.test(n)) return "🔢"; if(/medidor/.test(n)) return "📐";
+  if(/lápiz/.test(n)) return "✏️"; if(/ginger/.test(n)) return "🍪"; if(/bases/.test(n)) return "⬜";
+  return "🏺";
+}
+const PRODUCTS = RAW.map((r,i)=>{
+  const [type,title,orig,price,max] = r;
+  const p = {id:i+1,type,title,orig,price,max:max||0};
+  const mini = /minibox/i.test(title);
+  p.desc = CAT_STYLE[type].d + (mini ? " Presentación MINIBOX, formato chico." : "") + (max ? " Este producto tiene más de una presentación; elegí la que necesitás." : "") + " Si necesitás un color o variante específica, indicalo en el campo de detalle.";
+  p.variants = max ? [{label:"Presentación base",price:price},{label:"Presentación mayor",price:max}] : [{label:"Estándar",price:price}];
+  p.off = orig ? Math.round((1-price/orig)*100) : 0;
+  return p;
+});
+
+// ── Helpers ──
+const $ = id => document.getElementById(id);
+const fmt = n => n.toLocaleString("es-AR",{style:"currency",currency:"ARS",minimumFractionDigits:0,maximumFractionDigits:0});
+const norm = t => String(t).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const esc = s => String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let cur = null, cart = [];
+try{ cart = JSON.parse(localStorage.getItem("nicron_cart")||"[]"); }catch(e){ cart=[]; }
+function saveCart(){ try{localStorage.setItem("nicron_cart",JSON.stringify(cart));}catch(e){} }
+function art(p, big){
+  return `<div class="art" style="background:${CAT_STYLE[p.type].g}">${p.off?`<span class="off">-${p.off}%</span>`:""}<span class="ico">${emojiFor(p)}</span>${big?"":`<span class="name-in">${esc(p.type)}</span>`}</div>`;
+}
+
+// ── Filtros ──
+const F = {q:"",type:"",price:"",sort:""};
+const TYPES = ["", ...Object.keys(CAT_STYLE)];
+$("chips").innerHTML = TYPES.map(t=>`<button class="chip" data-type="${t}" aria-pressed="${t===""}" onclick="setType('${t}')">${t||"Todos"}</button>`).join("");
+
+function buildGrid(list){
+  if(!list.length){
+    $("grid").innerHTML = `<div class="empty-res"><b>Sin resultados</b><p>No encontramos productos con esos filtros.</p><button onclick="resetFilters()">Limpiar filtros</button></div>`;
+    return;
+  }
+  $("grid").innerHTML = list.map(p=>`
+    <div class="card" onclick="openProduct(${p.id})" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openProduct(${p.id})">
+      ${art(p)}
+      <div class="card-body">
+        <div class="card-cat">${esc(p.type)}</div>
+        <div class="card-title">${esc(p.title)}</div>
+        <div class="prices">${p.max?`<span class="from">desde</span>`:""}<span class="price">${fmt(p.price)}</span>${p.orig?`<span class="old">${fmt(p.orig)}</span>`:""}</div>
+        <button class="card-btn" tabindex="-1">Ver opciones</button>
+      </div>
+    </div>`).join("");
+}
+function applyFilters(){
+  const q = norm(F.q).trim().split(/\s+/).filter(Boolean);
+  let l = PRODUCTS.filter(p=>{
+    if(F.type && p.type!==F.type) return false;
+    if(F.price==="1" && p.price>5000) return false;
+    if(F.price==="2" && (p.price<5000||p.price>50000)) return false;
+    if(F.price==="3" && p.price<=50000) return false;
+    if(q.length){
+      const hay = norm(p.title+" "+p.type+" "+p.desc);
+      if(!q.every(w=>hay.includes(w))) return false;
+    }
+    return true;
+  });
+  if(F.sort==="asc") l.sort((a,b)=>a.price-b.price);
+  if(F.sort==="desc") l.sort((a,b)=>b.price-a.price);
+  if(F.sort==="az") l.sort((a,b)=>a.title.localeCompare(b.title,"es"));
+  buildGrid(l);
+  const n=l.length;
+  $("prod-count").textContent = n+(n===1?" producto":" productos");
+  $("res-meta").textContent = `Mostrando ${n} de ${PRODUCTS.length} productos`;
+  $("reset-f").hidden = !(F.q||F.type||F.price||F.sort);
+}
+function setQ(v){F.q=v;$("search-box").classList.toggle("has",!!v);applyFilters();}
+function clearQ(){$("q").value="";setQ("");$("q").focus();}
+function setType(t){F.type=t;document.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",String(c.dataset.type===t)));applyFilters();}
+function setPrice(v){F.price=v;applyFilters();}
+function setSort(v){F.sort=v;applyFilters();}
+function resetFilters(){F.q="";F.price="";F.sort="";$("q").value="";$("f-price").value="";$("f-sort").value="";$("search-box").classList.remove("has");setType("");}
+
+// ── Detalle ──
+function openProduct(id){
+  cur = PRODUCTS.find(p=>p.id===id);
+  $("det-art").innerHTML = art(cur,true);
+  $("det-cat").textContent = cur.type;
+  $("det-title").textContent = cur.title;
+  $("det-desc").textContent = cur.desc;
+  $("v-sel").innerHTML = cur.variants.map(v=>`<option>${esc(v.label)} — ${fmt(v.price)}</option>`).join("");
+  $("var-wrap").style.display = cur.variants.length>1 ? "block" : "none";
+  $("note").value = ""; $("qty").value = 1;
+  onVariant();
+  $("cat-page").style.display="none"; $("det-page").style.display="block";
+  window.scrollTo(0,0);
+}
+function curVar(){ return cur.variants[$("v-sel").selectedIndex] || cur.variants[0]; }
+function onVariant(){
+  const v = curVar();
+  $("det-price").textContent = fmt(v.price);
+  $("det-old").innerHTML = cur.orig && cur.variants.length===1 ? `<s>${fmt(cur.orig)}</s> -${cur.off}%` : "";
+  calcTotal();
+}
+function chQty(d){ $("qty").value = Math.max(1,(parseInt($("qty").value)||1)+d); calcTotal(); }
+function calcTotal(){
+  const q = Math.max(0,parseInt($("qty").value)||0), v = curVar();
+  $("s-var").textContent = v.label;
+  $("s-qty").textContent = q>0 ? q.toLocaleString("es-AR") : "—";
+  $("s-unit").textContent = fmt(v.price);
+  $("s-total").textContent = q>0 ? fmt(q*v.price) : "—";
+}
+function goBack(){ $("det-page").style.display="none"; $("cat-page").style.display="block"; window.scrollTo(0,0); }
+
+// ── Carrito ──
+function addCart(){
+  const qty = parseInt($("qty").value)||0;
+  if(qty<1){ toast("Ingresá una cantidad válida"); return; }
+  const vi = $("v-sel").selectedIndex<0?0:$("v-sel").selectedIndex, v = cur.variants[vi];
+  const note = $("note").value.trim();
+  const key = `${cur.id}_${vi}_${note}`;
+  const ex = cart.find(c=>c.key===key);
+  if(ex) ex.qty += qty;
+  else cart.push({key,id:cur.id,title:cur.title,type:cur.type,label:v.label,note,price:v.price,qty});
+  saveCart(); updateBadge(); toast("✓ Agregado al carrito");
+}
+function updateBadge(){
+  const n = cart.reduce((a,c)=>a+c.qty,0);
+  ["badge-cat","badge-det"].forEach(id=>{const el=$(id);el.textContent=n>99?"99+":n;el.style.display=n>0?"flex":"none";});
+}
+function openCart(){renderCart();$("panel").classList.add("on");$("overlay").classList.add("on");}
+function closeCart(){$("panel").classList.remove("on");$("overlay").classList.remove("on");}
+const subtotal = () => cart.reduce((a,c)=>a+c.price*c.qty,0);
+function renderCart(){
+  const footer=$("panel-footer");
+  if(!cart.length){
+    $("panel-items").innerHTML='<div class="empty"><span>🛒</span>Tu carrito está vacío</div>';
+    footer.style.display="none"; return;
+  }
+  $("panel-items").innerHTML = cart.map((c,i)=>{
+    const p = PRODUCTS.find(x=>x.id===c.id);
+    return `<div class="c-item">
+      <div class="c-art" style="background:${CAT_STYLE[c.type].g}">${emojiFor(p)}</div>
+      <div class="c-info">
+        <div class="c-title">${esc(c.title)}</div>
+        <div class="c-var">${esc(c.label)}${c.note?" · "+esc(c.note):""}</div>
+        <div class="c-ctl"><button onclick="chCart(${i},-1)" aria-label="Menos">−</button><span>${c.qty}</span><button onclick="chCart(${i},1)" aria-label="Más">+</button><span class="c-sub">${fmt(c.price*c.qty)}</span></div>
+      </div>
+      <button class="c-del" onclick="removeCart(${i})" aria-label="Quitar">×</button>
+    </div>`;}).join("");
+  const sub = subtotal();
+  $("cf-sub").textContent = fmt(sub); $("cf-total").textContent = fmt(sub);
+  const left = FREE_SHIP - sub;
+  $("free-msg").textContent = left>0 ? `Te faltan ${fmt(left)} para el envío gratis` : "🎉 ¡Tenés envío gratis!";
+  $("free-bar").style.width = Math.min(100,sub/FREE_SHIP*100)+"%";
+  footer.style.display="block";
+}
+function chCart(i,d){ cart[i].qty = Math.max(1,cart[i].qty+d); saveCart(); updateBadge(); renderCart(); }
+function removeCart(i){ cart.splice(i,1); saveCart(); updateBadge(); renderCart(); }
+function clearCart(){ if(!cart.length||!confirm("¿Querés vaciar el carrito?")) return; cart=[]; saveCart(); updateBadge(); renderCart(); toast("🗑️ Carrito vaciado"); }
+
+// ── Pedido ──
+const PAGOS = {transfer:"Transferencia (5% off)",tarjeta:"Tarjeta de crédito en cuotas",debito:"Tarjeta de débito",efectivo:"Efectivo (Pago Fácil / Rapipago)"};
+function totals(){
+  const sub = subtotal();
+  const disc = $("f-pago").value==="transfer" ? Math.round(sub*TRANSFER_DISC/100) : 0;
+  return {sub,disc,total:sub-disc};
+}
+function renderModalSum(){
+  const t = totals();
+  let h = cart.map(c=>`<div class="mrow"><span>${esc(c.title)}${c.note?" ("+esc(c.note)+")":""} × ${c.qty}</span><span>${fmt(c.price*c.qty)}</span></div>`).join("");
+  h += `<div class="mrow" style="border-top:1px solid var(--sum-b);margin-top:6px;padding-top:6px"><span>Subtotal</span><span>${fmt(t.sub)}</span></div>`;
+  if(t.disc) h += `<div class="mrow" style="color:var(--ok)"><span>Transferencia (${TRANSFER_DISC}%)</span><span>- ${fmt(t.disc)}</span></div>`;
+  h += `<div class="mrow"><span>Envío</span><span>${t.sub>=FREE_SHIP?"Gratis":"A coordinar"}</span></div>`;
+  h += `<div class="mrow tot"><span>Total</span><span>${fmt(t.total)}</span></div>`;
+  $("msum").innerHTML = h;
+}
+function openModal(){ if(!cart.length) return; renderModalSum(); $("order-modal").classList.add("on"); document.body.style.overflow="hidden"; }
+function closeModal(){ $("order-modal").classList.remove("on"); document.body.style.overflow=""; }
+function clearErr(k){ $("err-"+k).style.display="none"; $("f-"+k).style.borderColor=""; }
+function sendOrder(){
+  const nombre=$("f-nombre").value.trim(), tel=$("f-telefono").value.trim(), loc=$("f-localidad").value.trim(), nota=$("f-nota").value.trim();
+  let ok=true;
+  [["nombre",nombre],["telefono",tel],["localidad",loc]].forEach(([k,v])=>{ if(!v){ $("err-"+k).style.display="block"; $("f-"+k).style.borderColor="#d93025"; ok=false; }});
+  if(!ok) return;
+  const t = totals();
+  const lines = cart.map(c=>`• ${c.title}${c.label!=="Estándar"?" ("+c.label+")":""}${c.note?" ["+c.note+"]":""} x ${c.qty} = ${fmt(c.price*c.qty)}`).join("\n");
+  const msg = `*Nuevo pedido Nicron*\n\n*Cliente:* ${nombre}\n*Teléfono:* ${tel}\n*Localidad:* ${loc}\n*Pago:* ${PAGOS[$("f-pago").value]}\n\n*Productos:*\n${lines}\n\n`
+    + (t.disc?`*Subtotal:* ${fmt(t.sub)}\n*Descuento transferencia:* - ${fmt(t.disc)}\n`:"")
+    + `*Envío:* ${t.sub>=FREE_SHIP?"Gratis":"A coordinar"}\n*Total: ${fmt(t.total)}*`
+    + (nota?`\n\n*Nota:* ${nota}`:"");
+  window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(msg),"_blank");
+  closeModal(); cart=[]; saveCart(); updateBadge(); closeCart(); toast("✓ Pedido listo para enviar");
+}
+function contactWA(){
+  const v=curVar(), q=$("qty").value, n=$("note").value.trim();
+  window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(`Hola! Me interesa:\n• ${cur.title}\n• Presentación: ${v.label}${n?"\n• Detalle: "+n:""}\n• Cantidad: ${q}`),"_blank");
+}
+function floatWA(){ window.open("https://wa.me/"+WA+"?text="+encodeURIComponent("Hola! Quisiera consultar sobre sus productos Nicron."),"_blank"); }
+function toast(msg){ const t=$("toast"); t.textContent=msg; t.classList.add("on"); clearTimeout(toast._t); toast._t=setTimeout(()=>t.classList.remove("on"),2500); }
+
+// ── Tema ──
+function setTheme(t){
+  document.documentElement.setAttribute("data-theme",t);
+  ["theme-btn","theme-btn2"].forEach(id=>{const el=$(id); if(el) el.textContent = t==="dark"?"☀️":"🌙";});
+  try{localStorage.setItem("nicron_theme",t);}catch(e){}
+}
+function toggleTheme(){ setTheme(document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark"); }
+(function(){
+  let s=null; try{s=localStorage.getItem("nicron_theme");}catch(e){}
+  setTheme(s || (matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"));
+})();
+document.addEventListener("keydown",e=>{ if(e.key==="Escape"){closeModal();closeCart();} });
+
+updateBadge();
+applyFilters();
+</script>
+</body>
+</html>
